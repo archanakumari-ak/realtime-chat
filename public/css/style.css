@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.box{
+    margin-top: 100px;
+}
+.messages{
+    max-height: 400px;
+	overflow-y: scroll;
+}
