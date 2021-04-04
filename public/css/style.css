@@ -1,12 +1,15 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-.box{
-    margin-top: 100px;
-}
-.messages{
-    max-height: 400px;
-	overflow-y: scroll;
-}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white; }
+
+body {
+  background-color: #222831; }
+
+.box {
+  margin-top: 100px; }
+
+.messages {
+  max-height: 400px;
+  overflow-y: scroll; }

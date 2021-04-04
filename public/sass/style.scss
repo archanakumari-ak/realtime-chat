@@ -1,0 +1,24 @@
+$bg: #222831;
+$col: white;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: $col;
+}
+
+body {
+  background-color: $bg;
+}
+
+.box {
+  margin-top: 100px;
+}
+
+.messages {
+  max-height: 400px;
+  overflow-y: scroll;
+}
+
+// node-sass -o public/css public/sass/style.scss
