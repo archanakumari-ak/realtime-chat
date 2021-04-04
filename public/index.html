@@ -17,29 +17,31 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <div class="container col-md-4 box">
-      <h1><i class="fa fa-smile-o"></i> ChatCord</h1>
-      <form action="chat.html">
-        <div class="form-group">
-          <label>Username</label>
-          <input type="text" class="form-control" name="username" />
-        </div>
-        <div class="form-group">
-          <label>Room</label>
-          <select class="form-control" name="room">
-            <option value="Java">Java</option>
-            <option value="C++">C++</option>
-            <option value="Python">Python</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <input
-            type="submit"
-            class="btn btn-primary form-control"
-            value="Join Chat"
-          />
-        </div>
-      </form>
+    <div class="container-fluid">
+      <div class="col-lg-4 col-md-6 col-sm-8 box">
+        <h1 class="mb-3"><i class="fa fa-smile-o"></i> <span id="chat-span">Chat</span>Cord</h1>
+        <form action="chat.html">
+          <div class="form-group">
+            <label>Username</label>
+            <input type="text" class="form-control" name="username" />
+          </div>
+          <div class="form-group">
+            <label>Room</label>
+            <select class="form-control" name="room">
+              <option value="Java">Java</option>
+              <option value="C++">C++</option>
+              <option value="Python">Python</option>
+            </select>
+          </div>
+          <div class="form-group ">
+            <input
+              type="submit"
+              class="btn btn-primary form-control mt-2"
+              value="Join Chat"
+            />
+          </div>
+        </form>
+      </div>
     </div>
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"

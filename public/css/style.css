@@ -1,14 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Coiny&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: white; }
+  color: #eeeeee; }
 
 body {
   background-color: #222831; }
 
+.container-fluid {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
 .box {
-  margin-top: 100px; }
+  background-color: #393e46;
+  padding: 50px;
+  box-sizing: border-box;
+  border-radius: 10px; }
+
+.box h1 {
+  font-family: "Coiny", cursive; }
+
+.box .btn {
+  background-color: #00adb5; }
+
+.box input,
+.box select {
+  background-color: #eeeeee; }
+
+#chat-span {
+  color: #00adb5; }
 
 .messages {
   max-height: 400px;
