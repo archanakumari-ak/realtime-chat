@@ -17,45 +17,49 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <div class="container">
-      <div class="row">
-        <h1><i class="fa fa-smile-o"></i> ChatCord</h1>
-        <a href="index.html" class="btn btn-primary">Leave Room</a>
-      </div>
+    <div class="container-fluid">
+      <div class="msgbox">
+        <div class="row row1 mb-3">
+          <h1><i class="fa fa-smile-o"></i> ChatCord</h1>
+          <a href="index.html" class="btn btn1 float-right"
+            ><i class="fa fa-sign-out"></i
+          ></a>
+        </div>
 
-      <div class="row">
-        <div class="col-sm-4 sidebar">
-          <h3><i class="fa fa-comments"></i> Room Name</h3>
-          <h2 id="room-name">Java</h2>
-          <h3><t class="fa fa-users"></t> Users</h3>
-          <ul id="users"></ul>
-        </div>
-        <div class="col-sm-8 messages">
-          <div class="message">
-            <p class="info">Brad <span>9.12 pm</span></p>
-            <p class="msg">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi,
-              repudiandae.
-            </p>
+        <div class="row">
+          <div class="col-sm-4 sidebar">
+            <!-- <h4><i class="fa fa-comments"></i> Room Name</h4> -->
+            <h2 id="room-name"><i class="fa fa-comments"></i></h2>
+            <h4><i class="fa fa-users"></i> Users</h4>
+            <ul id="users"></ul>
           </div>
-          <div class="message">
-            <p class="info">Brad <span>9.12 pm</span></p>
-            <p class="msg-txt">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi,
-              repudiandae.
-            </p>
+          <div class="col-sm-8 messages">
+            <div class="message">
+              <p class="info">Brad <span>9.12 pm</span></p>
+              <p class="msg">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Eligendi, repudiandae.
+              </p>
+            </div>
+            <div class="message">
+              <p class="info">Brad <span>9.12 pm</span></p>
+              <p class="msg-txt">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Eligendi, repudiandae.
+              </p>
+            </div>
           </div>
         </div>
+        <form id="send-form">
+          <div class="form-group row mt-3">
+            <input type="text" id="msg" class="form-control col-sm-10" required />
+            <button type="submit" class="form-control btn col-sm-2">
+              <i class="fa fa-paper-plane"></i>
+              Send
+            </button>
+          </div>
+        </form>
       </div>
-      <form id="send-form">
-        <div class="form-group row">
-          <input type="text" id="msg" class="form-control col-sm-10" />
-          <button type="submit" class="form-control btn btn-primary col-sm-2">
-            <i class="fa fa-paper-plane"></i>
-            Send
-          </button>
-        </div>
-      </form>
     </div>
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"

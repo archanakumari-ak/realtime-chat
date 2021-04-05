@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Coiny&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 $col: white;
 $col1: #222831;
@@ -6,6 +7,7 @@ $col2: #393e46;
 $col3: #00adb5;
 $col4: #eeeeee;
 $font: 'Coiny', cursive;
+$font1: 'Poppins', sans-serif;
 
 // node-sass -o public/css public/sass/style.scss
 
@@ -18,6 +20,7 @@ $font: 'Coiny', cursive;
 
 body {
   background-color: $col1;
+  font-style: $font1;;
 }
 
 .container-fluid {
@@ -28,7 +31,7 @@ body {
 }
 
 
-.box {
+.box,.msgbox {
   background-color: $col2;
   padding: 50px;
   box-sizing: border-box;
@@ -58,4 +61,26 @@ body {
   overflow-y: scroll;
 }
 
+.msgbox .btn {
+  background-color: $col3;
+  color: $col4;
+}
 
+.row1 {
+  justify-content: space-between;
+}
+
+.message .info,.info span {
+  font-size: 0.75rem;
+  margin: 0;
+  color: #eeeeee7e;;
+}
+
+#users{
+  list-style-type: none;
+  display: block;
+}
+
+.sidebar h2{
+  margin-bottom: 15px;
+}
